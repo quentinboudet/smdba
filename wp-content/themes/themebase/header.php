@@ -43,6 +43,9 @@
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				<?php endif; ?>
 			</a>
+			<nav id="primary-navigation">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+			</nav>
 		</header><!-- #masthead -->
 
 		<div id="main">
