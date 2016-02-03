@@ -28,6 +28,7 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/style.css' type='text/css' media='screen' />
+	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/css/bootstraperso.css' type='text/css' media='screen' />
 	<?php wp_head(); ?>
 </head>
 
