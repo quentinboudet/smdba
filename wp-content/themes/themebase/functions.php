@@ -65,6 +65,12 @@ function my_custom_init()
 }
 add_action('init', 'my_custom_init');
 
+function gn_ajouter_styles_editeur() {
+    add_editor_style( 'editor-style.css' );
+}
+add_action( 'init', 'gn_ajouter_styles_editeur' );
+//fonction pour ajout de style dans l'éditeur de texte Wordpress
+
 //création d'un menu à placer avec 
 //wp_nav_menu( array( 'theme_location' => 'menumain', 'container' => 'ul', 'menu_class' => 'nav-main' ) );
 //puis gérer dans: apparence > menu

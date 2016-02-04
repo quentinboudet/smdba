@@ -5,8 +5,6 @@
  * @since Theme Base 1.0
  */
 ?>
-
-		</div><!-- #main -->
 		<footer id="main-footer">
 
 			<div class="site-info">
