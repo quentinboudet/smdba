@@ -48,42 +48,37 @@
 		<div>
 			<p><?php // Breadcrumb navigation
 			 if (is_page() && !is_front_page() || is_single() || is_category()) {
-			 echo '<ul class="list-unstyled list-inline">';
-			 echo '<li><a title="Accueil - Syndic" rel="nofollow" href="<?php echo esc_url( home_url( '/' ) ); ?>">Accueil</a></li>';
+				 echo '<ul class="breadcrumb">';
+				 echo '<li><a title="Accueil - '.get_bloginfo( 'name' ).'" rel="nofollow" href="'.esc_url( home_url( '/' ) ).'">SMDBA</a></li>';
 
-			 if (is_page()) {
-			 $ancestors = get_post_ancestors($post);
+				 if (is_page()) {
+				 $ancestors = get_post_ancestors($post);
 
-			 if ($ancestors) {
-			 $ancestors = array_reverse($ancestors);
+					 if ($ancestors) {
+						 $ancestors = array_reverse($ancestors);
 
-			 foreach ($ancestors as $crumb) {
-			 echo '<li><a href="'.get_permalink($crumb).'">'.get_the_title($crumb).'</a></li>';
-			 }
-			 }
-			 }
+						 foreach ($ancestors as $crumb) {
+						 	echo '<li><a href="'.get_permalink($crumb).'">'.get_the_title($crumb).'</a></li>';
+						 }
+					 }
+				 }
 
-			 if (is_single()) {
-			 $category = get_the_category();
-			 echo '<li><a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a></li>';
-			 }
+				 if (is_single()) {
+					 $category = get_the_category();
+					 echo '<li><a href="'.get_category_link($category[0]->cat_ID).'">'.$category[0]->cat_name.'</a></li>';
+				 }
 
-			 if (is_category()) {
-			 $category = get_the_category();
-			 echo '<li>'.$category[0]->cat_name.'</li>';
-			 }
+				 if (is_category()) {
+					 $category = get_the_category();
+					 echo '<li>'.$category[0]->cat_name.'</li>';
+				 }
 
-			 // Current page
-			 if (is_page() || is_single()) {
-			 echo '<li>'.get_the_title().'</li>';
-			 }
-			 echo '</ul>';
-			 } elseif (is_front_page()) {
-			 // Front page
-			 echo '<ul>';
-			 echo '<li><a title="Accueil - NOM DU SITE" rel="nofollow" href="<?php echo esc_url( home_url( '/' ) ); ?>">Accueil</a></li>';
-			 echo '</ul>';
-			 }
+				 // Current page
+				 if (is_page() || is_single()) {
+					 echo '<li>'.get_the_title().'</li>';
+				 }
+				 echo '</ul>';
+			 } 
 			?></p>
 		</div>
 		<div id="main">
