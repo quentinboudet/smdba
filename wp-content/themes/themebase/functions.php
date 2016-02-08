@@ -77,8 +77,7 @@ add_action( 'init', 'gn_ajouter_styles_editeur' );
 //en faisant attention d'avoir une class qui ne se modifie pas automatiquement depuis le titre donné dans apparence > menu
 register_nav_menus( array( 
 	'menumain' => 'Principal',
-	'menuparticulier' => 'Particulier', 
-	'menucollectivites' => 'Collectivites',
+	'menufooter' => 'Footer', 
 ));
 
 //Ajouter des liens dans le menu admin

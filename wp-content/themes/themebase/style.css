@@ -2618,10 +2618,22 @@ footer.entry-meta {
 
 .site-info {
 	margin: 0 auto;
-	max-width: 1040px;
-	padding: 30px 0;
+	background-image: url("../../Images/footer-natura2000.jpg");
+	background-repeat: no-repeat;
+	max-width: 1200px;
+	padding-top: 19%;
 	width: 100%;
 }
+
+#main-footer {
+	padding-top: 50px;
+}
+
+.site-partenaires ul {
+	background-color: white;
+}
+
+
 
 #wpstats {
 	display: block;
