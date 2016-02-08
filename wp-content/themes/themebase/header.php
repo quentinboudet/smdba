@@ -33,20 +33,14 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div id="container" >
+	<div id="container" class="natura2000" >
 		<header id="main-header" >
-			<a id="logo" class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+			<a id="logo" class="home-link col-sm-2" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 				<img src="<?php echo esc_url( home_url( '/wp-content/images/logo_smdba.png' ) ); ?>">
 			</a>
-			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<?php if (is_single()) : ?>
-					<p class="site-title"><?php bloginfo( 'name' ); ?></p>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-				<?php else : ?>
-					<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-				<?php endif; ?>
-			</a>
+			<aside class="col-sm-offset-4 col-sm-5">  
+				<span>Mairie, Le Village - 04270 Bras d’Asse</span><span>smdba@hotmail.fr</span>
+			</aside>
 			<nav id="primary-navigation" class="col-sm-offset-2 col-sm-10 no-padding">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu no-padding full-width' ) ); ?>
 			</nav>

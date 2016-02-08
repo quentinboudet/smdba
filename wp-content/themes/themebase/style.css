@@ -103,14 +103,27 @@ textarea {
 
 body {
 	color: #141412;
+	font-size: 150%;
 	line-height: 1.5;
 	background-color: #222222;
 }
 
 #container{
-	max-width: 1200px;
+	max-width: 1170px;
 	margin: 0 auto; 
 	background-color: #fff;
+	background-repeat: no-repeat;
+}
+#container.natura2000{
+	background-image: url('../../Images/header-natura2000.jpg');
+}
+
+header #logo{
+	display: inline-block;
+	margin: 10px 30px;
+}
+header #logo img{
+	height: 130px;
 }
 
 a {
@@ -811,6 +824,18 @@ img.wp-smiley,
  * 4.1 Site Header
  * ----------------------------------------------------------------------------
  */
+
+#main-header{
+	height: 410px;
+}
+
+#main-header aside{
+	margin-top: 90px;
+}
+
+#main-header aside span{
+	margin: 20px;
+}
 
 .site-header {
 	position: relative;
