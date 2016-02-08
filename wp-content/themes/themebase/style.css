@@ -102,9 +102,10 @@ textarea {
 }
 
 body {
+	max-width: 1200px;
+	margin: 0 auto; 
 	color: #141412;
 	line-height: 1.5;
-	margin: 0;
 }
 
 a {
