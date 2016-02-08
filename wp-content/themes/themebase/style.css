@@ -2627,11 +2627,10 @@ footer.entry-meta {
 	padding-top: 50px;
 }
 
-.site-partenaires ul {
-	background-color: white;
+.site-partenaires h2 {
+	color: #00707c;
+	padding-left: 6%;
 }
-
-
 
 #wpstats {
 	display: block;
