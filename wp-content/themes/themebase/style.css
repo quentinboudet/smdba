@@ -102,10 +102,15 @@ textarea {
 }
 
 body {
-	max-width: 1200px;
-	margin: 0 auto; 
 	color: #141412;
 	line-height: 1.5;
+	background-color: #222222;
+}
+
+#container{
+	max-width: 1200px;
+	margin: 0 auto; 
+	background-color: #fff;
 }
 
 a {
@@ -856,7 +861,6 @@ img.wp-smiley,
 ul.nav-menu,
 div.nav-menu > ul {
 	margin: 0;
-	padding: 0 40px 0 0;
 }
 
 .nav-menu li {
@@ -865,33 +869,29 @@ div.nav-menu > ul {
 }
 
 .nav-menu li a {
-	color: #141412;
+	color: #fff;
 	display: block;
+	border: 1px solid #00707c;
+	padding: 15px 20px;
 	font-size: 15px;
 	line-height: 1;
-	padding: 15px 20px;
 	text-decoration: none;
+	background-color: #00707c;
 }
 
 .nav-menu li:hover > a,
 .nav-menu li a:hover,
 .nav-menu li:focus > a,
 .nav-menu li a:focus {
-	background-color: #220e10;
-	color: #fff;
+	background-color: #fff;
+	color: #00707c;
 }
 
 .nav-menu .sub-menu,
 .nav-menu .children {
-	background-color: #220e10;
-	border: 2px solid #f7f5e7;
-	border-top: 0;
 	padding: 0;
 	position: absolute;
-	left: -2px;
 	z-index: 99999;
-	height: 1px;
-	width: 1px;
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
 }
@@ -910,13 +910,6 @@ ul.nav-menu ul a,
 	width: 200px;
 }
 
-ul.nav-menu ul a:hover,
-.nav-menu ul ul a:hover,
-ul.nav-menu ul a:focus,
-.nav-menu ul ul a:focus {
-	background-color: #db572f;
-}
-
 ul.nav-menu li:hover > ul,
 .nav-menu ul li:hover > ul,
 ul.nav-menu .focus > ul,
@@ -931,8 +924,9 @@ ul.nav-menu .focus > ul,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
-	color: #bc360a;
+	color: #00707c;
 	font-style: italic;
+	background-color: #fff;
 }
 
 .menu-toggle {

@@ -47,8 +47,8 @@
 					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 				<?php endif; ?>
 			</a>
-			<nav id="primary-navigation" class="col-sm-offset-2 col-sm-10">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+			<nav id="primary-navigation" class="col-sm-offset-2 col-sm-10 no-padding">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu no-padding full-width' ) ); ?>
 			</nav>
 		</header><!-- #masthead -->
 
