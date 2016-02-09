@@ -1,6 +1,8 @@
 div.wpcf7 {
-	margin: 0;
+	margin: auto;
 	padding: 0;
+	width: auto;
+	text-align: center;
 }
 
 div.wpcf7-response-output {
