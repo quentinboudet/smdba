@@ -19,6 +19,7 @@ Tags:
  * 4.0 - Header
  *   4.1 - Site Header
  *   4.2 - Navigation
+ *   4.2 - Breadcrumb
  * 5.0 - Content
  *   5.1 - Entry Header
  *   5.2 - Entry Meta
@@ -997,13 +998,14 @@ ul.nav-menu .focus > ul,
 
 
 /**
- * 4.3 Bredcrumb
+ * 4.3 Breadcrumb
  * ----------------------------------------------------------------------------
  */
 
 .breadcrumb {
-  padding: 8px 15px;
+  padding: 8px 50px;
   margin-bottom: 20px;
+  font-size: 80%;
 }
 .breadcrumb > li + li:before {
   color: #00707c;
@@ -2080,27 +2082,38 @@ footer.entry-meta {
  */
 
 .page-header {
-	background-color: #e8e5ce;
 }
 
 .page-title {
 	font: 300 italic 30px "Source Sans Pro", Helvetica, sans-serif;
 	margin: 0 auto;
-	max-width: 1040px;
 	padding: 30px 0;
 	width: 100%;
 }
 
 .page-content {
-	margin: 0 auto;
-	max-width: 604px;
-	padding: 40px 0;
+	margin: 0;
+	padding: 40px 0px;
 	width: 100%;
+}
+
+.page-content > *{
+	margin-left: 8.33333333%;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 83.33333333%;
+}
+
+.page-content > h2{
+	margin-left: 0px;
+	padding: 8px 50px 8px 8.33333333%;
+	width: 91.66666667%;
+	color: white;
+	background-color: #00707c;
 }
 
 .sidebar .page-content {
 	margin: 0 auto;
-	max-width: 1040px;
 	padding: 40px 376px 40px 60px;
 }
 

@@ -21,8 +21,8 @@
 get_header(); ?>
 	<section id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php while ( have_posts() ) : the_post(); ?>
-		<header>
-			<h1 class="page-title"><?php the_title(); ?></h1>
+		<header class="page-header col-sm-11">
+			<h1 class="page-title col-sm-offset-1"><?php the_title(); ?></h1>
 		</header>
 
 		<div class="page-content">
