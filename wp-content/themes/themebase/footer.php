@@ -21,7 +21,7 @@
 					<li class="col-sm-2 no-padding"><a href="http://www.eaurmc.fr/"><img src="<?php echo esc_url( home_url( '/wp-content/images/agence-eau-1-e1454951370824.png' ) ); ?>"></a></li>
 				</ul>
 			</div>
-			<nav id="footer-navigation" class="col-sm-12 no-padding">
+			<nav id="footer-navigation" class="col-sm-12 no-padding text-center">
 				<?php wp_nav_menu( array( 'theme_location' => 'menufooter', 'menu_class' => 'nav-menu no-padding full-width' ) ); ?>
 			</nav>
 		</footer>

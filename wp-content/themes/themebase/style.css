@@ -1055,9 +1055,7 @@ div.nav-menu > ul {
 	background-color: #00707c;
 }
 
-.nav-menu li:hover > a,
 .nav-menu li a:hover,
-.nav-menu li:focus > a,
 .nav-menu li a:focus {
 	background-color: #fff;
 	color: #00707c;
@@ -2807,6 +2805,12 @@ footer.entry-meta {
 
 #main-footer {
 	padding-top: 50px;
+}
+#main-footer .menu-footer-container ul li a{
+	font-size: 0.7em;
+}
+#main-footer .menu-footer-container ul li:nth-last-child(2){
+	border-left: 75px solid #00707c;
 }
 
 .site-partenaires h2 {
