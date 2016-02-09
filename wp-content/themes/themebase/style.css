@@ -263,7 +263,7 @@ body {
 	background-image: url('../../Images/header-natura2000.jpg');
 }
 a {
-	color: #ca3c08;
+	color: #00707c;
 	text-decoration: none;
 }
 
@@ -469,8 +469,15 @@ ul {
 
 nav ul,
 nav ol {
-	list-style: none;
-	list-style-image: none;
+	font-weight: bolder;
+	font-size: 1.3em;
+	list-style: upper-roman;
+}
+nav ul  ul,
+nav ol ol {
+	font-weight: normal;
+	font-size: .8em;
+	list-style: upper-latin;
 }
 
 li > ul,
@@ -1718,7 +1725,7 @@ footer.entry-meta {
 }
 
 .format-link .entry-title {
-	color: #ca3c08;
+	color: #00707c;
 	display: inline;
 	font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
 	margin-right: 20px;
@@ -1964,7 +1971,7 @@ footer.entry-meta {
 .attachment .entry-meta a,
 .attachment .entry-meta .edit-link:before,
 .attachment .full-size-link:before {
-	color: #ca3c08;
+	color: #00707c;
 }
 
 .attachment .entry-content {
@@ -2121,7 +2128,7 @@ footer.entry-meta {
 
 .post-navigation {
 	background-color: #fff;
-	color: #ca3c08;
+	color: #00707c;
 	font-size: 20px;
 	font-style: italic;
 	font-weight: 300;
@@ -2181,7 +2188,7 @@ footer.entry-meta {
 }
 
 .author-link {
-	color: #ca3c08;
+	color: #00707c;
 	margin-left: 2px;
 }
 

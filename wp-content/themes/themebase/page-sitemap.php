@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Sitemap
+ *Template Name: sitemap
  * ce nom sera celui affiché lors de la selection du modèle de page
  *
  * @package WordPress
@@ -20,23 +20,28 @@
  */
 
 get_header(); ?>
-	<div id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<section id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php while ( have_posts() ) : the_post(); ?>
-		<h1 class="page-title"><?php the_title(); ?></h1>
+		<header class="page-header col-sm-11">
+			<h1 class="page-title col-sm-offset-1"><?php the_title(); ?></h1>
+		</header>
 
 		<div class="page-content">
-			<?php the_content(); ?>
-			<div><p>hello</p></div>
-			<?php the_post_thumbnail();
-			//taxonomie (fonctions.php)
-			echo get_the_term_list( $post->ID, 'type', '<p>Type de projet : ', ', ', '</p>' )
-			echo get_the_term_list( $post->ID, 'couleur', '<p>Couleurs : ', ', ', '</p>' ) ?>
+			
+			<nav id="" class="col-sm-offset-2 col-sm-8 no-padding">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => ' no-padding ' ) ); ?>
+			</nav>
 		</div>
-
-		<div class="page-edit">
+		<?php
+		//pour ajouter des champs avec dans la page d'edition d'une page : option de l'ecran > champ personalisé
+			$client = get_post_meta($post->ID, "NOM DU CHAMP", true);//pour un seul champ
+			$client = get_post_meta($post->ID, "");//pour plusieur champs(dans un array)
+			if($client!=NULL){ echo '<p><strong> '.$client.'</strong></p>'; }
+		?>
+		<footer class="page-edit">
 			<?php edit_post_link( __( 'Edit', 'themebase' ), '<span class="edit-link">', '</span>' ); ?>
-		</div>
+		</footer>
 	<?php endwhile; ?>
-	</div><!-- #page -->
+	</section><!-- #page -->
 <?php get_sidebar();
 get_footer(); ?>
