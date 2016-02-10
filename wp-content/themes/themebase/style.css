@@ -251,7 +251,7 @@ body {
 	font-family: "lato", sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
-	background-color: #222222;
+	background-color: #eee;
 }
 
 #container{
@@ -970,7 +970,7 @@ img.wp-smiley,
  */
 
 #main-header{
-	height: 410px;
+	height: 430px;
 }
 
 #main-header #logo{
@@ -1050,7 +1050,7 @@ div.nav-menu > ul {
 	color: #fff;
 	display: block;
 	border: 1px solid #00707c;
-	padding: 15px 20px;
+	padding: 12px 20px 6px;
 	font-family: "didact_gothic", sans-serif;
 	font-size: 17px;
 	font-weight: normal;
@@ -2253,11 +2253,12 @@ footer.entry-meta {
     display: table;
 }
 
-.logos div {
+.logos div , .logos li{
 	display: table-cell;
+	float: none;
 }
 
-.logos div img{
+.logos div img, .logos li img{
 	max-width: 100%;
 }
 
@@ -2283,7 +2284,7 @@ footer.entry-meta {
 
 .page-content > h2{
 	margin-left: 0px;
-	padding: 8px 50px 8px 8.33333333%;
+	padding: 8px 50px 6px 8.33333333%;
 	width: 91.66666667%;
 	color: white;
 	background-color: #00707c;

@@ -13,8 +13,8 @@
 			</div><!-- .site-info -->
 			<div class="site-partenaires clearfix">
 				<h2>Nos partenaires</h2>
-				<ul class="list-unstyled list-inline col-sm-12 no-padding text-center">
-					<li class="col-sm-offset-1 col-sm-2 no-padding"><a href="http://www.developpement-durable.gouv.fr/-Natura-2000,2414-.html"><img src="<?php echo esc_url( home_url( '/wp-content/images/logo-natura-2000.original-e1454951050966.jpg' ) ); ?>"></a></li>
+				<ul class="list-unstyled list-inline col-sm-12 no-padding logos">
+					<li class="col-sm-2 no-padding"><a href="http://www.developpement-durable.gouv.fr/-Natura-2000,2414-.html"><img src="<?php echo esc_url( home_url( '/wp-content/images/logo-natura-2000.original-e1454951050966.jpg' ) ); ?>"></a></li>
 					<li class="col-sm-2 no-padding"><a href="http://europa.eu/index_fr.htm"><img src="<?php echo esc_url( home_url( '/wp-content/images/logo-union-europeenne-2-e1454950928291.jpg' ) ); ?>"></a></li>
 					<li class="col-sm-2 no-padding"><a href="http://www.paca.developpement-durable.gouv.fr/"><img src="<?php echo esc_url( home_url( '/wp-content/images/MEDDE-e1454951292303.jpg' ) ); ?>"></a></li>
 					<li class="col-sm-2 no-padding"><a href="http://www.regionpaca.fr/"><img src="<?php echo esc_url( home_url( '/wp-content/images/region_logo-2.png' ) ); ?>"></a></li>
