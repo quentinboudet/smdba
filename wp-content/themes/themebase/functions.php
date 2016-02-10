@@ -122,3 +122,20 @@ function fonction_de_la_page_options() {
   echo '</div>';
 
 }
+
+// fonction permettant de remplacer les balises <p> par des balises figure pour gérer plus facilement les images
+add_filter( 'the_content', 'replace_p_in_img', 99 );
+function replace_p_in_img( $content ) {
+
+   $content = preg_replace(
+
+      '/<p>\\s*?(<a rel=\"attachment.*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s',
+
+      '<figure>$1</figure>',
+      $content
+
+   );
+
+   return $content;
+
+}

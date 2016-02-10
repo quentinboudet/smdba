@@ -2250,6 +2250,15 @@ footer.entry-meta {
 	width: 100%;
 }
 
+.logos {
+    text-align: center;
+    display: table;
+}
+
+.logos div {
+	display: table-cell;
+}
+
 .page-content {
 	margin: 0;
 	padding: 40px 0px;
@@ -2261,6 +2270,13 @@ footer.entry-meta {
 	padding-left: 0px;
 	padding-right: 0px;
 	width: 83.33333333%;
+}
+
+.page-content > figure{
+	margin: 0;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
 }
 
 .page-content > h2{
