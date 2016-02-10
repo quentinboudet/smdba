@@ -2257,6 +2257,10 @@ footer.entry-meta {
 	display: table-cell;
 }
 
+.logos div img{
+	max-width: 100%;
+}
+
 .page-content {
 	margin: 0;
 	padding: 40px 0px;
@@ -2270,7 +2274,7 @@ footer.entry-meta {
 	width: 83.33333333%;
 }
 
-.page-content > figure{
+.page-content > figure, .wp-caption{
 	margin: 0;
 	padding-left: 0px;
 	padding-right: 0px;
