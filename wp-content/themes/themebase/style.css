@@ -2673,6 +2673,7 @@ footer.entry-meta {
 
 .wpcf7-form-control-wrap input, .wpcf7-form-control-wrap textarea{
 	width: 600px;
+	border: 2px solid #13717A;
 }
 
 .wpcf7-form{
