@@ -34,6 +34,7 @@ Tags:
  *   5.11 - 404
  *   5.12 - Comments
  *   5.13 - Multisite
+ *	 5.14 - Contact
  * 6.0 - Sidebar
  *   6.1 - Widgets
  * 7.0 - Footer
@@ -2640,6 +2641,30 @@ footer.entry-meta {
 .site-main .mu_register input[type="submit"] {
 	width: auto;
 }
+
+
+/**
+ * 5.14 Contact
+ * ----------------------------------------------------------------------------
+ */
+
+.wpcf7-form-control-wrap input, .wpcf7-form-control-wrap textarea{
+	width: 600px;
+}
+
+.wpcf7-form{
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.wpcf7-form p{
+	text-align: left;
+}
+
+.wpcf7-form p:last-of-type{
+	text-align: center;
+}
+
 
 
 /**
