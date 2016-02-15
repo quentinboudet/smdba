@@ -138,7 +138,7 @@ function slgf_js_css_load_function() {
              * css scripts
              */
 			wp_enqueue_style('wl-slgf-hover-pack-css', WEBLIZAR_SLGF_PLUGIN_URL.'css/hover-pack.css');
-			wp_enqueue_style('wl-slgf-boot-strap-css', WEBLIZAR_SLGF_PLUGIN_URL.'css/bootstrap.css');
+			/*wp_enqueue_style('wl-slgf-boot-strap-css', WEBLIZAR_SLGF_PLUGIN_URL.'css/bootstrap.css');*/
 			wp_enqueue_style('wl-slgf-img-gallery-css', WEBLIZAR_SLGF_PLUGIN_URL.'css/img-gallery.css');
 
             /**
@@ -149,7 +149,7 @@ function slgf_js_css_load_function() {
             /**
              * envira & isotope js
              */
-			wp_enqueue_script( 'slgf_envira-js', WEBLIZAR_SLGF_PLUGIN_URL.'js/masonry.pkgd.min.js', array('jquery') );
+			/*wp_enqueue_script( 'slgf_envira-js', WEBLIZAR_SLGF_PLUGIN_URL.'js/masonry.pkgd.min.js', array('jquery') );*/
 			wp_enqueue_script( 'slgf_imagesloaded', WEBLIZAR_SLGF_PLUGIN_URL.'js/imagesloaded.pkgd.min.js', array('jquery') );
 
             break;

@@ -182,13 +182,7 @@ function slgf_ShortCode_load_function( $Id ) {
 		})( jQuery );
 	});
 
-	jQuery('.gallery1').imagesLoaded( function(){
-	  jQuery('.gallery1').masonry({
-	   itemSelector: '.wl-gallery',
-	   isAnimated: true,
-	   isFitWidth: true
-	  });
-	});
+	jQuery('.gallery1').imagesLoaded( );
 	</script>
 	
     <?php wp_reset_query(); ?>
