@@ -262,7 +262,7 @@ body {
 	background-repeat: no-repeat;
 }
 #container.natura2000{
-	background-image: url('../../Images/header-natura2000.jpg');
+	background-image: url('../../images/header-natura2000.jpg');
 }
 a {
 	color: #00707c;
@@ -2875,7 +2875,7 @@ footer.entry-meta {
 .site-info {
 	margin: 0 auto;
 	background-repeat: no-repeat;
-	background-image: url("../../Images/footer-natura2000.jpg");
+	background-image: url("../../images/footer-natura2000.jpg");
 	max-width: 1200px;
 	padding-top: 19%;
 	width: 100%;
@@ -3334,7 +3334,7 @@ footer.entry-meta {
 		width: 100%;
 	}
 
-	
+
 }
 
 
