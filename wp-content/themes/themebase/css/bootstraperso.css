@@ -5563,4 +5563,9 @@ ul.full-width{
 .full-width > li{
   display: table-cell;
 }
+
+.inline-block{
+  display: inline-block;
+  float: none;
+}
 /*# sourceMappingURL=bootstrap.css.map */

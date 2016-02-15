@@ -117,7 +117,7 @@ function slgf_ShortCode_load_function( $Id ) {
 				</div>
 				<?php } ?>
 				
-				<div class="gallery1">
+				<div class="gallery1 text-center">
 					<?php
 					/**
 					 * Get All Photos from Lightbox Slider Pro Post Meta
@@ -147,8 +147,7 @@ function slgf_ShortCode_load_function( $Id ) {
 								if($SLGF_Thumbnail_Layout == "masonry") $Thummb_Url = $url2;
 								if($SLGF_Thumbnail_Layout == "original") $Thummb_Url = $url;
 							}
-						?>
-						<div class="<?php echo $SLGF_Gallery_Layout; ?> col-sm-6 wl-gallery" >
+						?><div class="<?php echo $SLGF_Gallery_Layout; ?> col-sm-6 wl-gallery inline-block" >
 							<div class="img-box-shadow">
 							
 								<?php //  Swipe box	?>
@@ -165,8 +164,7 @@ function slgf_ShortCode_load_function( $Id ) {
 								</div>
 								<?php } ?>
 							</div>
-						</div>
-						<?php
+						</div><?php
 						}// end of foreach
 					} else { 
 						echo __("No Photo Found In Photo Gallery.", WEBLIZAR_SLGF_TEXT_DOMAIN);
