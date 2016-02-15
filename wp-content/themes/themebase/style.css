@@ -1063,6 +1063,7 @@ img.wp-smiley,
 ul.nav-menu,
 div.nav-menu > ul {
 	margin: 0;
+	background-color: #00707c;
 }
 
 .nav-menu li {
@@ -1093,6 +1094,7 @@ div.nav-menu > ul {
 .nav-menu .children {
 	padding: 0;
 	position: absolute;
+	text-align: left;
 	z-index: 99999;
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
