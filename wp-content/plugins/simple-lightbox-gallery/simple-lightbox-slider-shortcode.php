@@ -72,9 +72,6 @@ function slgf_ShortCode_load_function( $Id ) {
 			width: 16.60% !important;
 		}
 	}
-	img {
-		max-width:1600px !important;
-	}
 	
 	#slgf_<?php echo $SLGF_Id; ?> .slgf_home_portfolio_caption{
 		background:<?php echo $SLGF_Text_BG_Color; ?>;
