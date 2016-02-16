@@ -73,12 +73,6 @@ function slgf_ShortCode_load_function( $Id ) {
 		}
 	}
 	
-	#slgf_<?php echo $SLGF_Id; ?> .slgf_home_portfolio_caption{
-		background:<?php echo $SLGF_Text_BG_Color; ?>;
-	}
-	#slgf_<?php echo $SLGF_Id; ?> .slgf_home_portfolio_caption h3{
-		color:<?php echo $SLGF_Text_Color; ?>;
-	}
 	<?php if($SLGF_Box_Shadow =="yes"){ ?>
 	#slgf_<?php echo $SLGF_Id; ?> .img-box-shadow{
 		box-shadow: 0 0 6px rgba(0,0,0,.7);

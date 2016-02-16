@@ -76,23 +76,17 @@ box-sizing: content-box;
 
 .slgf_home_portfolio_caption {
 border-radius: 0;
-padding: 0 0 15px;
+/*padding: 0 0 15px;*/
 text-align: center;
-font-family: 'OpenSansRegular';
-
-}
-.slgf_home_portfolio_caption {
-background: #fff;
 padding:3%;
-}
-.slgf_home_portfolio_caption {
-
 border-bottom: 2px solid rgba(0,0,0,.4);
-
+background-color: #00707c;
 }
+
 .slgf_home_portfolio_caption h3 {
 font-size: 17px !important;
-font-weight:bold;
+font-family: "didact_gothic", sans-serif;
+color: white;
 padding:0px !important;
 margin:0px !important;
 }
