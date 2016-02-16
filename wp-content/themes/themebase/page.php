@@ -31,9 +31,9 @@ get_header(); ?>
 		</div>
 		<?php
 		//pour ajouter des champs avec dans la page d'edition d'une page : option de l'ecran > champ personalisé
-			$client = get_post_meta($post->ID, "NOM DU CHAMP", true);//pour un seul champ
+			/*$client = get_post_meta($post->ID, "NOM DU CHAMP", true);//pour un seul champ
 			$client = get_post_meta($post->ID, "");//pour plusieur champs(dans un array)
-			if($client!=NULL){ echo '<p><strong> '.$client.'</strong></p>'; }
+			if($client!=NULL){ echo '<p><strong> '.$client.'</strong></p>'; }*/
 		?>
 		<footer class="page-edit">
 			<?php edit_post_link( __( 'Edit', 'themebase' ), '<span class="edit-link">', '</span>' ); ?>
