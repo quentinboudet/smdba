@@ -1094,16 +1094,10 @@ div.nav-menu > ul {
 .nav-menu .children {
 	padding: 0;
 	position: absolute;
-	width: 100%;
 	text-align: left;
 	z-index: 99999;
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
-}
-
-.nav-menu .sub-menu li,
-.nav-menu .children li{
-	width: 100%;
 }
 
 .nav-menu .sub-menu ul,
@@ -1111,14 +1105,13 @@ div.nav-menu > ul {
 	border-left: 0;
 	left: 100%;
 	top: 0;
-	width: 100%;
 }
 
 ul.nav-menu ul a,
 .nav-menu ul ul a {
 	color: #fff;
 	margin: 0;
-	width: 100%;
+	width: 200px;
 	font-size: 15px;
 	font-family: "didact_gothic", sans-serif;
 }
@@ -1211,7 +1204,7 @@ ul.nav-menu .focus > ul,
  */
 
 .hentry {
-	padding: 40px 0;
+	/*padding: 40px 0;*/
 }
 
 .entry-header,
@@ -2275,10 +2268,11 @@ footer.entry-meta {
 }
 
 .page-title {
-	font: 300 italic 30px "Source Sans Pro", Helvetica, sans-serif;
+	font-family: "fineliner", sans-serif;
 	margin: 0 auto;
-	padding: 30px 0;
+	color: #00707c;
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 .logos {
@@ -2329,6 +2323,45 @@ footer.entry-meta {
 	padding: 40px 376px 40px 60px;
 }
 
+/* SCHEMA SYNDICAT PRESENTATION */
+
+.actions {
+	float: none;
+}
+
+.actions ul li{
+	margin: 5px 5px;
+	color: white;
+	background-color: #00707c;
+	border: 1px solid white;
+	border-radius: 5px 0 0 5px;
+	padding: 10px;
+}
+
+.actions ul li:first-child {
+	background-image: url("http://www.smdba.fr/wp-content/images/1.png");
+	background-repeat: no-repeat;
+}
+
+.actions ul li:nth-child(2){
+	background-image: url("http://www.smdba.fr/wp-content/images/2.png");
+	background-repeat: no-repeat;
+}
+
+.actions ul li:nth-child(3){
+	background-image: url("http://www.smdba.fr/wp-content/images/3.png");
+	background-repeat: no-repeat;
+}
+
+.actions ul li:nth-child(4){
+	background-image: url("http://www.smdba.fr/wp-content/images/4.png");
+	background-repeat: no-repeat;
+}
+
+.actions ul li:nth-child(5){
+	background-image: url("http://www.smdba.fr/wp-content/images/5.png");
+	background-repeat: no-repeat;
+}
 
 /**
  * 5.11 404
