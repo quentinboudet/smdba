@@ -2325,8 +2325,8 @@ footer.entry-meta {
 
 /* SCHEMA SYNDICAT PRESENTATION */
 
-.actions {
-	float: none;
+.actions ul{
+    float: none;
 }
 
 .actions ul li{
@@ -2335,7 +2335,8 @@ footer.entry-meta {
 	background-color: #00707c;
 	border: 1px solid white;
 	border-radius: 5px 0 0 5px;
-	padding: 10px;
+	padding: 10px 40px 10px 60px;
+	background-position: 1em center;
 }
 
 .actions ul li:first-child {
