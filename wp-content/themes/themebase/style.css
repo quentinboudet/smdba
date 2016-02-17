@@ -1094,10 +1094,16 @@ div.nav-menu > ul {
 .nav-menu .children {
 	padding: 0;
 	position: absolute;
+	width: 100%;
 	text-align: left;
 	z-index: 99999;
 	overflow: hidden;
 	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.nav-menu .sub-menu li,
+.nav-menu .children li{
+	width: 100%;
 }
 
 .nav-menu .sub-menu ul,
@@ -1105,13 +1111,14 @@ div.nav-menu > ul {
 	border-left: 0;
 	left: 100%;
 	top: 0;
+	width: 100%;
 }
 
 ul.nav-menu ul a,
 .nav-menu ul ul a {
 	color: #fff;
 	margin: 0;
-	width: 200px;
+	width: 100%;
 	font-size: 15px;
 	font-family: "didact_gothic", sans-serif;
 }
