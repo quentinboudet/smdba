@@ -2285,9 +2285,9 @@ footer.entry-meta {
 	float: none;
 }
 
-.logos div img, .logos li img{
-	max-width: 50%;
-	max-height: 100px;
+.site-partenaires li img {
+    max-width: 50%;
+    max-height: 100px;
 }
 
 .page-content {
