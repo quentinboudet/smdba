@@ -250,7 +250,7 @@ textarea {
 body {
 	color: #141412;
 	font-family: "lato", sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.5;
 	background-color: #eee;
 }
@@ -973,7 +973,7 @@ img.wp-smiley,
 
 .contrats h2 {
 	font-family: "didact_gothic", sans-serif;
-    font-size: 29px;
+    font-size: 25px;
     background-color: #13717A;
     color: white;
     padding: 10px;
