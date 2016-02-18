@@ -2334,34 +2334,43 @@ footer.entry-meta {
 	margin: 5px 5px;
 	color: white;
 	background-color: #00707c;
-	border: 1px solid white;
-	border-radius: 5px 0 0 5px;
+	/*border: 1px solid white;
+	border-radius: 5px 0 0 5px;*/
+	list-style: none;
 	padding: 10px 40px 10px 60px;
 	background-position: 1em center;
 }
 
+.actions ul li a{
+	color: white;
+}
+
+
+/* AJOUT DES NUMEROS POUR LES PUCES */
+
 .actions ul li:first-child {
-	background-image: url("http://www.smdba.fr/wp-content/images/1.png");
+	
+	background-image: url("../../images/puce.png");
 	background-repeat: no-repeat;
 }
 
 .actions ul li:nth-child(2){
-	background-image: url("http://www.smdba.fr/wp-content/images/2.png");
+	background-image: url("../../images/puce.png");
 	background-repeat: no-repeat;
 }
 
 .actions ul li:nth-child(3){
-	background-image: url("http://www.smdba.fr/wp-content/images/3.png");
+	background-image: url("../../images/puce.png");
 	background-repeat: no-repeat;
 }
 
 .actions ul li:nth-child(4){
-	background-image: url("http://www.smdba.fr/wp-content/images/4.png");
+	background-image: url("../../images/puce.png");
 	background-repeat: no-repeat;
 }
 
 .actions ul li:nth-child(5){
-	background-image: url("http://www.smdba.fr/wp-content/images/5.png");
+	background-image: url("../../images/puce.png");
 	background-repeat: no-repeat;
 }
 
