@@ -2334,8 +2334,7 @@ footer.entry-meta {
 	margin: 5px 5px;
 	color: white;
 	background-color: #00707c;
-	/*border: 1px solid white;
-	border-radius: 5px 0 0 5px;*/
+	border-radius: 5px 0 0 5px;
 	list-style: none;
 	padding: 10px 40px 10px 60px;
 	background-position: 1em center;
