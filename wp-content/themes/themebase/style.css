@@ -990,9 +990,9 @@ img.wp-smiley,
  */
 
 
-.contrats h2 {
+.contrats h3 {
 	font-family: "didact_gothic", sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     background-color: #13717A;
     color: white;
     padding: 10px;
@@ -2329,7 +2329,7 @@ footer.entry-meta {
 	width: 100%;
 }
 
-.page-content > h2{
+.page-content h2{
 	margin-left: 0px;
 	padding: 8px 50px 6px 8.33333333%;
 	width: 91.66666667%;
@@ -2364,7 +2364,7 @@ footer.entry-meta {
 }
 
 
-/* AJOUT DES NUMEROS POUR LES PUCES */
+/* AJOUT DES PUCES */
 
 .actions ul li:first-child {
 	
@@ -2390,6 +2390,22 @@ footer.entry-meta {
 .actions ul li:nth-child(5){
 	background-image: url("../../images/puce.png");
 	background-repeat: no-repeat;
+}
+
+/* Mise en page Equipe Technique */
+
+.natura h2, .milieu h2 {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.natura div, .milieu div {
+    border: 1px solid #00707c;
+    padding-bottom: 80%;
+    padding-left: 50%;
+    padding-top: 5%;
+    height: 200px;
+
 }
 
 /**
