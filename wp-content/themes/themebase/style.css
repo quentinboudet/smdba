@@ -857,6 +857,18 @@ img.size-large,
 img.wp-post-image {
 	height: auto;
 	max-width: 100%;
+	float: left;
+	margin-left: 3em;
+}
+
+/* Mise en page des articles*/
+aside.post-info {
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+h3.post-title {
+    margin-left: 2%;
 }
 
 /* Make sure videos and embeds fit their containers. */
@@ -2989,7 +3001,7 @@ footer.entry-meta {
 }
 
 #main-footer {
-	padding-top: 50px;
+	padding-top: 220px;
 }
 #main-footer .menu-footer-container ul li a{
 	font-size: 14px;

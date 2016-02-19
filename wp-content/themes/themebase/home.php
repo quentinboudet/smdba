@@ -19,9 +19,9 @@ get_header();
 get_sidebar();
 
 wp_reset_postdata();
-query_posts('posts_per_page=3&post_type=post');?>
+query_posts('posts_per_page=5&post_type=post');?>
 
-<?php if (have_posts()) while (have_posts()) : the_post(); ?>
+<?php if (have_posts()) {while (have_posts()) { the_post_thumbnail(); the_post(); ?>
     <article class="post">
         <header>
             <h3 class="post-title">
@@ -31,9 +31,19 @@ query_posts('posts_per_page=3&post_type=post');?>
         <aside class="post-info">
             Posté le <?php the_date(); ?> dans <?php the_category(', '); ?> par <?php the_author(); ?>.
         </aside>
+        <?php if (has_post_thumbnail()) { ?>
+       <?php the_post_thumbnail(); ?>
         <div class="post-content">
             <?php the_content(); ?>
         </div>
+        <?php } else { ?>
+         <div class="post-content col-sm-offset-1">
+            <?php the_content(); ?>
+        </div>
+  <?php }?>
     </article>
-<?php endwhile; ?>
+
+<?php } ?>
+<?php } ?>
+
 <?php get_footer(); ?>

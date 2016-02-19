@@ -14,6 +14,7 @@
  * mot(s)-clef(s) 		:	the_tags() 					plusieurs <a>
  * date de publication 	:	the_date() ou the_time()
  * permalien 			:	the_permalink()				lien simple
+ * Vérifier existence image à la une          :          has_post_thumbnail()
  * 
  */
 
