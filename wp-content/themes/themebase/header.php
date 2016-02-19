@@ -33,7 +33,21 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div id="container" class="natura2000" >
+<?php
+	//recupérer la part du permalink correspondant au plus grand ancetre de la page
+	$parentSlug = "";
+	 if (is_page()) {
+	 $ancestors = get_post_ancestors($post);
+
+		 if ($ancestors) {
+			 $ancestors = array_reverse($ancestors);
+
+	 		 $parentSlug = basename(get_permalink($ancestors[0]));
+		 }
+	 	else $parentSlug = basename(get_permalink());
+	 }
+?>
+	<div id="container" class="<?php echo $parentSlug ?>" >
 		<header id="main-header" >
 			<a id="logo" class="home-link col-sm-2" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 				<img src="<?php echo esc_url( home_url( '/wp-content/images/logo_smdba.png' ) ); ?>">

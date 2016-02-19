@@ -258,12 +258,31 @@ body {
 #container{
 	max-width: 1170px;
 	margin: 0 auto; 
+	background-image: url('../../images/header-accueil.jpg');
 	background-color: #fff;
 	background-repeat: no-repeat;
 }
-#container.natura2000{
+
+#container.contact{
+	background-image: url('../../images/header-contact.jpg');
+}
+
+#container.marches-publics{
+	background-image: url('../../images/header-marches-public.jpg');
+}
+
+#container.natura-2000{
 	background-image: url('../../images/header-natura2000.jpg');
 }
+
+#container.contrat-milieu{
+	background-image: url('../../images/header-contrat-milieu.jpg');
+}
+
+#container.le-syndicat{
+	background-image: url('../../images/header-syndicat.jpg');
+}
+
 a {
 	color: #00707c;
 	text-decoration: none;
@@ -2927,10 +2946,30 @@ footer.entry-meta {
 .site-info {
 	margin: 0 auto;
 	background-repeat: no-repeat;
-	background-image: url("../../images/footer-natura2000.jpg");
+	background-image: url("../../images/footer-accueil.jpg");
 	max-width: 1200px;
 	padding-top: 19%;
 	width: 100%;
+}
+
+#container.contact .site-info {
+	background-image: url('../../images/footer-contact.jpg');
+}
+
+#container.marches-publics .site-info {
+	background-image: url('../../images/footer-marches-public.jpg');
+}
+
+#container.natura-2000 .site-info {
+	background-image: url('../../images/footer-natura2000.jpg');
+}
+
+#container.contrat-milieu .site-info {
+	background-image: url('../../images/footer-contrat-milieu.jpg');
+}
+
+#container.le-syndicat .site-info {
+	background-image: url('../../images/footer-syndicat.jpg');
 }
 
 #main-footer {
