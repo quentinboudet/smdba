@@ -275,7 +275,7 @@ body {
 	background-image: url('../../images/header-natura2000.jpg');
 }
 
-#container.contrat-milieu{
+#container.contrat-de-milieu-de-lasse{
 	background-image: url('../../images/header-contrat-milieu.jpg');
 }
 
@@ -1106,7 +1106,7 @@ div.nav-menu > ul {
 			color: #fff;
 			display: block;
 			border: 1px solid #00707c;
-			padding: 12px 20px 6px;
+			padding: 12px 10% 6px;
 			font-family: "didact_gothic", sans-serif;
 			font-size: 17px;
 			font-weight: normal;
@@ -2995,7 +2995,7 @@ footer.entry-meta {
 	background-image: url('../../images/footer-natura2000.jpg');
 }
 
-#container.contrat-milieu .site-info {
+#container.contrat-de-milieu-de-lasse .site-info {
 	background-image: url('../../images/footer-contrat-milieu.jpg');
 }
 
