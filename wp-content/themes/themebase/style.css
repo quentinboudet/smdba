@@ -765,11 +765,11 @@ button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
-	background: #e05d22; /* Old browsers */
-	background: -webkit-linear-gradient(top, #e05d22 0%, #d94412 100%); /* Chrome 10+, Safari 5.1+ */
-	background:   linear-gradient(to bottom, #e05d22 0%, #d94412 100%); /* W3C */
+	background: #00707c; /* Old browsers */
+	/*background: -webkit-linear-gradient(top, #e05d22 0%, #00707c 100%); /* Chrome 10+, Safari 5.1+ */
+	/*background:   linear-gradient(to bottom, #e05d22 0%, #00707c 100%); /* W3C */
 	border: none;
-	border-bottom: 3px solid #b93207;
+	border-bottom: 3px solid #00707c;
 	border-radius: 2px;
 	color: #fff;
 	display: inline-block;
@@ -785,9 +785,10 @@ input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus {
-	background: #ed6a31; /* Old browsers */
-	background: -webkit-linear-gradient(top, #ed6a31 0%, #e55627 100%); /* Chrome 10+, Safari 5.1+ */
-	background:   linear-gradient(to bottom, #ed6a31 0%, #e55627 100%); /* W3C */
+	background: #00707c; /* Old browsers */
+	opacity: .7;
+	/*background: -webkit-linear-gradient(top, #ed6a31 0%, #e55627 100%); /* Chrome 10+, Safari 5.1+ */
+	/*background:   linear-gradient(to bottom, #ed6a31 0%, #e55627 100%); /* W3C */
 	outline: none;
 }
 
@@ -795,11 +796,11 @@ button:active,
 input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
-	background: #d94412; /* Old browsers */
-	background: -webkit-linear-gradient(top, #d94412 0%, #e05d22 100%); /* Chrome 10+, Safari 5.1+ */
-	background:   linear-gradient(to bottom, #d94412 0%, #e05d22 100%); /* W3C */
+	background: #00707c; /* Old browsers */
+	/*background: -webkit-linear-gradient(top, #d94412 0%, #e05d22 100%); /* Chrome 10+, Safari 5.1+ */
+	/*background:   linear-gradient(to bottom, #d94412 0%, #e05d22 100%); /* W3C */
 	border: none;
-	border-top: 3px solid #b93207;
+	border-top: 3px solid #00707c;
 	padding: 10px 24px 11px;
 }
 
@@ -857,7 +858,6 @@ img.size-large,
 img.wp-post-image {
 	height: auto;
 	max-width: 100%;
-	float: left;
 	margin-left: 3em;
 }
 
@@ -929,7 +929,8 @@ img.alignnone {
 .entry-caption,
 .gallery-caption {
 	color: #220e10;
-	font-size: 18px;
+	font-size: 14px;
+	text-align: right;
 	font-style: italic;
 	font-weight: 300;
 	margin: 0 0 24px;
@@ -2406,6 +2407,11 @@ footer.entry-meta {
 	background-image: url("../../images/puce.png");
 	background-repeat: no-repeat;
 }
+
+.attachment-post-thumbnail size-post-thumbnail wp-post-image {
+	float: left;
+}
+
 
 /* Mise en page Equipe Technique */
 

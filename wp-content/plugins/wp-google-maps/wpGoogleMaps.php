@@ -2829,7 +2829,7 @@ function wpgmaps_tag_basic( $atts ) {
     else if ($map_align == "2") { $map_align = "margin-left:auto !important; margin-right:auto; !important; align:center;"; }
     else if ($map_align == "3") { $map_align = "float:right;"; }
     else if ($map_align == "4") { $map_align = ""; }
-    $map_style = "style=\"display:block; overflow:auto; width:".$res->map_width."".$map_width_type."; height:".$res->map_height."".$map_height_type."; $map_align\"";
+    $map_style = "style=\"display:block; overflow:auto; margin-top:2em; margin-bottom:2em; height:".$res->map_height."".$map_height_type."; $map_align\"";
 
     $map_other_settings = maybe_unserialize($res->other_settings);
     $sl_data = "";
