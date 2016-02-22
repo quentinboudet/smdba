@@ -1,0 +1,81 @@
+#home_slider{
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+    #home_slider .slider_image{
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+        #home_slider .slider_image li{
+            position: absolute;
+            width: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+        #home_slider .slider_image li:first-of-type{
+            width: 100%;
+        }
+        #home_slider .slider_image .slider_texte{
+            position: absolute;
+            top: 200px;
+            right: 0px;
+            //display: none;
+            width: 500px;
+            color: white;
+            background-image: url("images/fondnoirtransparent.png");
+        }
+        #home_slider .slider_image .slider_texte:first-of-type{
+            //display: block;
+        }
+            #home_slider .slider_image h4{
+                display: inline-block;
+                margin: 10px 0 0;
+                padding: 0 0 0 10px;
+                font-size: 180%;
+                color: #faa21b;
+            }
+            #home_slider .slider_image p{
+                display: inline-block;
+                margin: 0;
+                padding: 10px ;
+                line-height: 112%;
+                font-size: 290%;
+                font-weight: 800;
+                color: white;
+                text-transform: uppercase;
+            }
+
+    #home_slider .slider_bouton{
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+        #home_slider .slider_bouton li{
+            display: inline-block;;
+            height: 8px;
+            width: 25px;
+            margin: 0;
+            background-color: #31569c;
+        }
+        #home_slider .slider_bouton li:hover{
+            cursor: pointer;
+            background-color: #faa21b;
+        }
+        #home_slider .slider_bouton li.active{
+            cursor: default;
+            background-color: #faa21b;
+        }
