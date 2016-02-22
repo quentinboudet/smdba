@@ -14,8 +14,39 @@
  * @since Twenty Thirteen 1.0
  */
 
-get_header(); 
+	global $wpdb;
+get_header(); ?>
+	<div id="home_slider">
+		<ul class="slider_image">
+			<?php $u_slider = $wpdb->get_results("SELECT * FROM slider ORDER BY id");
+			foreach ($u_slider as $row) {
+				$id = $row->id;?>
+			<li>
+				<img src="<?php echo esc_url( home_url( '/' ) ); ?><?php echo $row->img;?>" alt="">
+				<div class="slider_texte">
+					<?php 
+					if($row->titre != "") echo "<h4>".$row->titre."</h4><br>";
+					if($row->texte != "") echo "<p>".$row->texte."</p>";
+					?>
+				</div>
+			</li>
+			<?php }	?>
+		</ul>
+		<ul class="slider_bouton">
+			<?php $u_slider = $wpdb->get_results("SELECT * FROM slider ORDER BY id");
+			$n=0;
+			foreach ($u_slider as $row) {
+				$id = $row->id;
+				if($n == 0){
+					echo '<li class="active"></li>';
+					$n = 1;
+				}
+				else echo '<li></li>';?>
+			<?php }	?>
+		</ul>
+	</div>
 	
+<?php
 get_sidebar();
 
 wp_reset_postdata();
@@ -43,7 +74,6 @@ query_posts('posts_per_page=5&post_type=post');?>
   <?php }?>
     </article>
 
-<?php } ?>
-<?php } ?>
-
-<?php get_footer(); ?>
+<?php } 
+} 
+get_footer(); ?>
