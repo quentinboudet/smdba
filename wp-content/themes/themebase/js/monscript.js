@@ -2,41 +2,47 @@ jQuery(function($) {
 $(document).ready(function(){
 	
 //SLIDER///
+	var temps = 700;
 	var hs = $("#home_slider");
-	var sim = hs.children(".slider_image");
-	var imv = sim.children().first();
-	var sbt = hs.children(".slider_bouton");
-	var bta = sbt.children().first();
+	var sim = hs.children(".slider_image").children();
+	var imv = sim.first();
+	var sbt = hs.children(".slider_bouton").children();
+	var bta = sbt.first();
 	var sliderAutoInter = 0;
 	function sliderAuto(){ 
 		sliderAutoInter = setInterval(
 			function(){
 				//imv.children('.slider_texte').hide(function(){
 
-					imv.animate({width:"0"});
+					//imv.animate({left:"100%"});
 					bta.removeClass("active");
 					if (imv.next().length) {
-						imv = imv.next().animate({width:"100%"});
+						imv = imv.next().animate({left:"0%"}, temps);
 						bta = bta.next().addClass("active");
 					}
 					else {
-						imv = sim.children().first().animate({width:"100%"});
-						bta = sbt.children().first().addClass("active");
+						sim.slice(1).animate({left:"100%"}, temps);
+						imv = sim.first();
+						bta = sbt.first().addClass("active");
 					}
 				//});
-			}, 10000
+			}, 1000
 		);
 	}
 	sliderAuto();
 
-	sbt.children().click(function(){
+	sbt.click(function(){
+		var btc = $(this);
 		if (!$(this).hasClass("active")){
 			bta.removeClass("active");
-			//imv.children('.slider_texte').hide();
-			imv.animate({width:"0"});
-			bta = $(this).addClass("active");
-			imv = sim.children().eq(bta.index()).animate({width:"100%"});
-			//imv.children('.slider_texte').show();
+
+			if(bta.index() < btc.index())
+				sim.slice(0, btc.index()+1).animate({left:"0%"}, temps);
+			else
+				sim.slice(btc.index()+1).animate({left:"100%"}, temps);
+
+			imv = sim.eq(btc.index());
+			bta = btc.addClass("active");
 		}
 
 	});
