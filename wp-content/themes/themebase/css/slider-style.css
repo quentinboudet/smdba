@@ -106,3 +106,30 @@
             cursor: default;
             background-color: #00707c;
         }
+
+    #slider_gauche, #slider_droite{
+        position: absolute;
+        height: 70px;
+        width: 4%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        top: 50%;
+        cursor: pointer;
+        z-index: 100;
+        -webkit-transition-duration: .2s; /* Safari */
+        transition-duration: .2s;
+    }
+    #slider_gauche{
+        left: 2%;
+        background-image: url('../../../images/slider_gauche.png');
+    }
+    #slider_droite{
+        right: 2%;
+        background-image: url('../../../images/slider_droite.png');
+    }
+    #slider_gauche:active{
+        left: 4%;
+    }
+    #slider_droite:active{
+        right: 4%;
+    }

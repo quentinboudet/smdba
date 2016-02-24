@@ -45,6 +45,8 @@ get_header(); ?>
 				else echo '<li></li>';?>
 			<?php }	?>
 		</ul>
+		<div id="slider_gauche"></div>
+		<div id="slider_droite"></div>
 	</div>
 	<div class="slider_image">
 			<?php $u_edito = $wpdb->get_results("SELECT * FROM edito ORDER BY id");
