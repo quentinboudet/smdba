@@ -47,6 +47,8 @@
 		 }
 	 	else $parentSlug = basename(get_permalink());
 	 }
+	 if($parentSlug == "")
+	 	$parentSlug = "accueil"
 ?>
 	<div id="container" class="<?php echo $parentSlug ?>" >
 		<header id="main-header" >

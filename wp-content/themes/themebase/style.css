@@ -263,6 +263,14 @@ body {
 	background-repeat: no-repeat;
 }
 
+#container.accueil{
+	background-image: url('../../images/header-accueilrec1.jpg');
+}
+
+#container.accueil #main-header{
+	height: 234px;
+}
+
 #container.contact{
 	background-image: url('../../images/header-contact.jpg');
 }
@@ -1166,7 +1174,6 @@ ul.nav-menu .focus > ul,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
 	color: #00707c;
-	font-style: italic;
 	background-color: #fff;
 }
 
@@ -1420,7 +1427,6 @@ footer.entry-meta {
 .page-links {
 	clear: both;
 	font-size: 16px;
-	font-style: italic;
 	font-weight: normal;
 	line-height: 2.2;
 	margin: 20px 0;

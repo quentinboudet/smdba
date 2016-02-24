@@ -157,16 +157,16 @@ wp_enqueue_media();
 		<hr style="width:70%;margin:15px 0 35px;">
 		<legend style="display:inline-block;text-decoration:underline;font-size:140%;">Slider n°<?php echo $row->id;?></legend>
 		<input type="submit" name="s<?php echo $row->id;?>_suppr" value="Supprimer le slider"><br>
-		<label>Ordre : </label><input type="text" name="s<?php echo $row->id;?>_ordre" value="<?php echo $row->id;?>"><br>
+		<label>Ordre : </label><input type="text" name="s<?php echo $row->id;?>_ordre" value="<?php echo $row->id;?>" size="3"><br>
 
-		<label>Image : </label><input type="text" class="media-input" name="s<?php echo $row->id;?>_img" value="<?php echo $row->img;?>"><button class="button media-button ">Choisir image</button><br>
+		<label>Image : </label><input type="text" class="media-input" name="s<?php echo $row->id;?>_img" value="<?php echo $row->img;?>" size="100"><button class="button media-button ">Choisir image</button><br>
 		<label>si vous voulez mettre une image qui n'est pas dans la biblihotèque, elle doit forcément être dans les dossiers du site. Il faut danc ce cas saisir le chemin seulement a partir de ce qui suit l'url du site.
 		Sans oubliez l'extension (".png", ".jpg", etc...)</label><br>
 		<label>Exemple seul ce qui est entre crochets doit être saisit: http://www.monsite.fr/[wp-content/images/monimage.jpg]</label><br>
 		<label>Hauteur minimum de l'image (et conseillé, plus grand est inutile) : 400px</label><br>
 		<img src="<?php echo esc_url( home_url( '/' ) ); ?><?php echo $row->img;?>"><br>
-		<label>Titre : </label><input type="text" name="s<?php echo $row->id;?>_titre" value="<?php echo $row->titre;?>"><br>
-		<label>Texte : </label><input type="text" name="s<?php echo $row->id;?>_texte" value="<?php echo $row->texte;?>"><br>
+		<label>Titre : </label><input type="text" name="s<?php echo $row->id;?>_titre" value="<?php echo $row->titre;?>" size="100"><br>
+		<label>Texte : </label><textarea name="s<?php echo $row->id;?>_texte" rows="4" cols="100"><?php echo $row->texte;?></textarea><br>
 		<input type="submit" name="submit">
 		<?php global $post;
 		// Get WordPress' media upload URL

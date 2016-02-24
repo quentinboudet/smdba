@@ -17,6 +17,7 @@
 	global $wpdb;
 get_header(); ?>
 	<div id="home_slider">
+		<div class="vague"></div>
 		<ul class="slider_image">
 			<?php $u_slider = $wpdb->get_results("SELECT * FROM slider ORDER BY id");
 			foreach ($u_slider as $row) {
