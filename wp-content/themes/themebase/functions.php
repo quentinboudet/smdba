@@ -98,12 +98,22 @@ wp_enqueue_media();
 	}
 	global $wpdb;
 	$suppr_slider = $wpdb->get_col("SELECT id FROM slider");
+	$suppr_edito = $wpdb->get_col("SELECT id FROM edito");
+
 	foreach ($suppr_slider as $id){
 		if (isset($_POST['s'.$id.'_suppr'])){
 			$wpdb->delete("slider", array('id' => $id ));
-			echo "<p style='font-weight:bold;color:#1a7;' class='updated below-h2' >Le slider a bien été supprimer.</p>";
+			echo "<p style='font-weight:bold;color:#1a7;' class='updated below-h2' >Le slider a bien été supprimé.</p>";
 		}
 	}
+
+	foreach ($suppr_edito as $id){
+		if (isset($_POST['s'.$id.'_suppr'])){
+			$wpdb->delete("edito", array('id' => $id ));
+			echo "<p style='font-weight:bold;color:#1a7;' class='updated below-h2' >L'édito a bien été supprimé.</p>";
+		}
+	}
+
 	if (isset($_POST['new_slider'])){
 		$maxid = $wpdb->get_var("SELECT MAX(id) FROM slider");
 		if($wpdb->insert(
@@ -117,6 +127,7 @@ wp_enqueue_media();
 		)) echo "<p style='font-weight:bold;color:#1a7;' class='updated below-h2' >Un slider a bien été ajouté.</p>";
 		else echo "Un problème est survenu pour l'ajout d'un slider, veuillez réessayer ou contacter l'éditeur du site si le problème persiste.";
 	}
+
 	if (isset($_POST['submit'])) {
 		$u_slider = $wpdb->get_results("SELECT * FROM slider");
 		foreach ($u_slider as $row) {
@@ -138,7 +149,21 @@ wp_enqueue_media();
 			);
 		}
 	}
+
+	if (isset($_POST['new_edito'])) {
+		$u_edito = $wpdb->get_results("SELECT * FROM edito");
+		
+			$wpdb->update( 
+				'edito', //nom de la table a up
+				array( //remplacement des colonnes
+					'texte' => str_replace("\'", "'", $_POST[$id.'_texte']) ),
+				array( 'id' => $id ) //selection de la ligne a éditer
+
+			);
+		
+	}
 	$slider = $wpdb->get_results("SELECT * FROM slider");
+	$edito = $wpdb->get_results("SELECT * FROM edito");
 
 	wp_deregister_script( 'jquery' );
 	wp_enqueue_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js', array(), '1.7' );
@@ -186,6 +211,12 @@ wp_enqueue_media();
 	<hr style="width:70%;margin:15px 0 35px;">
 	<input type="submit" name="new_slider" value="Ajouter un slider">
 	<hr style="margin:15px 0 40px;border-width:2px;">
+
+<!-- Ajouter un éditorial -->
+	<label>Editorial : </label><input type="text" name="<?php echo $edito[0]->id;?>_texte" value="<?php echo $edito[0]->texte;?>"><br>
+	<?php echo var_dump($edito);?>
+	<input type="submit" name="new_edito" value="Editer l'édito">
+
 <!-- Fin affichage d'edition des sliders -->
 <?php
 }

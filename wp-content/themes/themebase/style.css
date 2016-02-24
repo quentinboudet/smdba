@@ -862,21 +862,30 @@ img[class*="attachment-"] {
 }
 
 img.size-full,
-img.size-large,
-img.wp-post-image {
+img.size-large {
 	height: auto;
 	max-width: 100%;
 	margin-left: 3em;
 }
 
+img.wp-post-image {
+	height: auto;
+	max-width: 100%;
+	margin-left: 3em;
+	float: left;
+}
 /* Mise en page des articles*/
 aside.post-info {
     margin-left: 5%;
     margin-bottom: 1%;
 }
 
-h3.post-title {
-    margin-left: 2%;
+h3.post-title a {
+	color: black;
+}
+
+h3.post-title, aside.post-info {
+    font-family: "didact_gothic", sans-serif;
 }
 
 /* Make sure videos and embeds fit their containers. */
@@ -2337,7 +2346,7 @@ footer.entry-meta {
 	width: 100%;
 }
 
-.page-content > *{
+.page-content > *, .post{
 	margin-left: 8.33333333%;
 	padding-left: 0px;
 	padding-right: 0px;
@@ -2351,7 +2360,7 @@ footer.entry-meta {
 	width: 100%;
 }
 
-.page-content h2{
+.page-content h2, .actualites {
 	margin-left: 0px;
 	padding: 8px 50px 6px 8.33333333%;
 	width: 91.66666667%;
