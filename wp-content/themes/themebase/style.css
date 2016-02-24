@@ -1509,6 +1509,14 @@ footer.entry-meta {
 	border-radius: 0;
 }
 
+/* EDITO */
+.edito_texte {
+	width: 83.33333333%;
+    border: 2px solid #00707c;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
 
 /**
  * 5.4 Galleries

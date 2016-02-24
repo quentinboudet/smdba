@@ -214,7 +214,6 @@ wp_enqueue_media();
 
 <!-- Ajouter un éditorial -->
 	<label>Editorial : </label><input type="text" name="<?php echo $edito[0]->id;?>_texte" value="<?php echo $edito[0]->texte;?>"><br>
-	<?php echo var_dump($edito);?>
 	<input type="submit" name="new_edito" value="Editer l'édito">
 
 <!-- Fin affichage d'edition des sliders -->

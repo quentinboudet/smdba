@@ -50,7 +50,7 @@ get_header(); ?>
 			<?php $u_edito = $wpdb->get_results("SELECT * FROM edito ORDER BY id");
 			foreach ($u_edito as $row) {
 				$id = $row->id;?>
-				<div class="slider_texte">
+				<div class="edito_texte col-sm-offset-1">
 					<?php 
 					if($row->texte != "") echo "<p>".$row->texte."</p>";
 					?>
@@ -62,8 +62,33 @@ get_header(); ?>
 get_sidebar();
 
 wp_reset_postdata();
-query_posts('posts_per_page=5&post_type=post');?>
+query_posts('posts_per_page=5&post_type=post&category_name=debats');
 
+echo "<h2 class=\"actualites\">Débats</h2>";?>
+
+ <?php if (have_posts()) {while (have_posts()) { the_post_thumbnail(); the_post(); ?>
+    <article class="post clearfix">
+        <header>
+            <h3 class="post-title">
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </h3>
+        </header>
+        <aside class="post-info">
+            Posté le <?php the_date(); ?> dans <?php the_category(', '); ?> par <?php the_author(); ?>.
+        </aside>
+        <div class="post-content col-sm-offset-3">
+            <?php the_content(); ?>
+        </div>
+
+        <hr>
+
+    </article>
+<?php }
+} 
+
+wp_reset_postdata();
+query_posts('posts_per_page=5&post_type=post&category_name=actualites'); // rajouter category name pour spécifier la catégorie en question
+?>
 <h2 class="actualites">Actualités</h2>
 
 <?php if (have_posts()) {while (have_posts()) { the_post_thumbnail(); the_post(); ?>
@@ -92,29 +117,6 @@ query_posts('posts_per_page=5&post_type=post');?>
     </article>
 
 <?php } 
-} 
-wp_reset_postdata();
-query_posts('posts_per_page=5&post_type=post&category_name=debats'); // rajouter category name pour spécifier la catégorie en question
-
-  echo "<h2 class=\"actualites\">Débats</h2>";
-  if (have_posts()) {while (have_posts()) { the_post_thumbnail(); the_post(); ?>
-    <article class="post clearfix">
-        <header>
-            <h3 class="post-title">
-                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            </h3>
-        </header>
-        <aside class="post-info">
-            Posté le <?php the_date(); ?> dans <?php the_category(', '); ?> par <?php the_author(); ?>.
-        </aside>
-        <div class="post-content col-sm-offset-3">
-            <?php the_content(); ?>
-        </div>
-
-        <hr>
-
-    </article>
-<?php }
 } 
 
 get_footer(); ?>
