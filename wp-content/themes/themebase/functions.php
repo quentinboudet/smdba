@@ -77,6 +77,7 @@ add_action( 'init', 'gn_ajouter_styles_editeur' );
 register_nav_menus( array( 
 	'menumain' => 'Principal',
 	'menufooter' => 'Footer', 
+	'menufooterresponsive' => 'Footer Responsive'
 ));
 
 

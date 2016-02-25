@@ -8,7 +8,7 @@
 		</div>
 		<footer id="main-footer">
 
-			<div class="site-info">
+			<div class="site-info hidden-xs">
 
 			</div><!-- .site-info -->
 			<div class="site-partenaires clearfix">
@@ -21,8 +21,11 @@
 					<li class="col-sm-2 no-padding"><a href="http://www.eaurmc.fr/"><img src="<?php echo esc_url( home_url( '/wp-content/images/agence-eau-1-e1454951370824.png' ) ); ?>"></a></li>
 				</ul>
 			</div>
-			<nav id="footer-navigation" class="col-sm-12 no-padding text-center">
+			<nav id="footer-navigation" class="col-sm-12 no-padding text-center hidden-xs">
 				<?php wp_nav_menu( array( 'theme_location' => 'menufooter', 'menu_class' => 'nav-menu no-padding full-width' ) ); ?>
+			</nav>
+			<nav id="footer-navigation" class="col-xs-12 no-padding text-center visible-xs">
+				<?php wp_nav_menu( array( 'theme_location' => 'menufooterresponsive', 'menu_class' => 'nav-menu no-padding full-width' ) ); ?>
 			</nav>
 		</footer>
 	</div><!-- #container -->

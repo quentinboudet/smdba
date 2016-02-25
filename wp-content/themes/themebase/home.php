@@ -81,10 +81,8 @@ echo "<h2 class=\"actualites\">Débats</h2>";?>
         <div class="post-content col-sm-offset-3">
             <?php the_content(); ?>
         </div>
-
-        <hr>
-
     </article>
+      <hr>
 <?php }
 } 
 
@@ -93,7 +91,8 @@ query_posts('posts_per_page=5&post_type=post&category_name=actualites'); // rajo
 ?>
 <h2 class="actualites">Actualités</h2>
 
-<?php if (have_posts()) {while (have_posts()) { the_post_thumbnail(); the_post(); ?>
+<?php while (have_posts()) { 
+	 the_post(); ?>
     <article class="post clearfix">
         <header>
             <h3 class="post-title">
@@ -105,20 +104,17 @@ query_posts('posts_per_page=5&post_type=post&category_name=actualites'); // rajo
         </aside>
         <?php if (has_post_thumbnail()) { ?>
        <?php the_post_thumbnail(); ?>
-        <div class="post-content">
+        <div class="post-content col-sm-offset-5">
             <?php the_content(); ?>
         </div>
-
         <?php } else { ?>
          <div class="post-content col-sm-offset-3">
             <?php the_content(); ?>
         </div>
 
-        <hr>
   <?php }?>
     </article>
-
+       <hr col-sm-offset-3>
 <?php } 
-} 
 
 get_footer(); ?>
