@@ -27,7 +27,13 @@ get_header(); ?>
 		</header>
 
 		<div class="page-content">
-			<?php the_content(); ?>
+			<?php 
+				$contenu = explode("<h2", the_content()); 
+				for ($i=0; $i < $contenu.length; $i++) { 
+					echo "<div class=\"montrer\">"."<h2".$contenu[i]."</div>";
+				}
+				
+				?>
 		</div>
 		<?php
 		//pour ajouter des champs avec dans la page d'edition d'une page : option de l'ecran > champ personalisé
