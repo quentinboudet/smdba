@@ -28,6 +28,7 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/css/bootstraperso.css' type='text/css' media='screen' />
 	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/style.css' type='text/css' media='screen' />
 	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/css/slider-style.css' type='text/css' media='screen' />
@@ -57,7 +58,7 @@
 				<img src="<?php echo esc_url( home_url( '/wp-content/images/logo_smdba.png' ) ); ?>">
 			</a>
 			<aside class="col-sm-offset-4 col-sm-5">  
-				<span>Mairie, Le Village - 04270 Bras d’Asse</span><span>smdba@hotmail.fr</span>
+				<span>Mairie, Le Village - 04270 Bras d’Asse</span><span><a href="mailto:smdba@hotmail.fr">smdba@hotmail.fr</a></span>
 			</aside>
 			<div class="nav-container container-fluid col-sm-offset-2 col-sm-10 no-padding">
 		    <!-- Brand and toggle get grouped for better mobile display -->

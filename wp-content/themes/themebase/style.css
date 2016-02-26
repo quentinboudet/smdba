@@ -2383,6 +2383,10 @@ footer.entry-meta {
 .page-header {
 }
 
+header span a {
+    color: black;
+}
+
 .page-title {
 	font-family: "fineliner", sans-serif;
 	margin: 0 auto;
@@ -2414,7 +2418,7 @@ footer.entry-meta {
 
 .page-content > *, .post{
 	margin-left: 8.33333333%;
-	padding-left: 0px;
+	/*padding-left: 0px;*/
 	padding-right: 0px;
 	width: 83.33333333%;
 }
@@ -2435,20 +2439,21 @@ footer.entry-meta {
 	font-size: 20px;
 	position: relative;
 }
-
-.page-content h2::after{
-	content:'';
-	border: 1px solid #069;
-	width: 1px;
-	height:1px;
-	border: 1px solid white;
-	border-color: transparent transparent white transparent;
-	border-width: 13px;
-	position: absolute;
-	bottom: 11px;
-	right: 30px;
+@media screen and (max-width: 768px) {
+	.page-content h2::after {
+		content:'';
+		border: 1px solid #069;
+		width: 1px;
+		height:1px;
+		border: 1px solid white;
+		border-color: transparent transparent white transparent;
+		border-width: 13px;
+		position: absolute;
+		bottom: 11px;
+		right: 30px;
 }
 
+}
 .page-content h2:target .montrer{
 	display: none;
 }
