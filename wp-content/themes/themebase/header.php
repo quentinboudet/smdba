@@ -40,17 +40,16 @@
 	//recupérer la part du permalink correspondant au plus grand ancetre de la page
 	$parentSlug = "";
 	 if (is_page()) {
-	 $ancestors = get_post_ancestors($post);
-
+	 	$ancestorspost = get_post_ancestors($post);
 		 if ($ancestors) {
-			 $ancestors = array_reverse($ancestors);
+			 $ancestors = array_reverse($ancestorspost);
 
 	 		 $parentSlug = basename(get_permalink($ancestors[0]));
 		 }
 	 	else $parentSlug = basename(get_permalink());
 	 }
-	 if($parentSlug == "")
-	 	$parentSlug = "accueil"
+	 if(is_home())
+	 	$parentSlug = "accueil";
 ?>
 	<div id="container" class="<?php echo $parentSlug ?>" >
 		<header id="main-header" >

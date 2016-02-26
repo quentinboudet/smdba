@@ -1169,6 +1169,18 @@ div.nav-menu > ul {
 				font-family: "didact_gothic", sans-serif;
 			}
 
+ul.nav-menu li:hover > ul,
+.nav-menu ul li:hover > ul,
+ul.nav-menu li:focus > ul,
+.nav-menu li:focus > ul ,
+ul.nav-menu li:active > ul,
+.nav-menu li:active > ul {
+	clip: inherit;
+	overflow: inherit;
+	height: inherit;
+	width: inherit;
+}
+
 .nav-menu .current_page_item > a,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
@@ -1228,6 +1240,14 @@ div.nav-menu > ul {
 			#main-header .nav-menu .sub-menu,
 			#main-header .nav-menu .children {
 				position: relative;
+			}		
+			ul.nav-menu li:hover > ul,
+			.nav-menu ul li:hover > ul,
+			ul.nav-menu li:focus > ul,
+			.nav-menu li:focus > ul ,
+			ul.nav-menu li:active > ul,
+			.nav-menu li:active > ul {
+				overflow: auto;
 			}
 				#main-header .nav-menu .sub-menu li, #main-header .nav-menu .children li {
 				    padding-left: 10%;
@@ -2404,6 +2424,7 @@ header span a {
 .logos {
     text-align: center;
     display: table;
+    table-layout: fixed;
 }
 
 .logos div , .logos li{
@@ -2532,11 +2553,17 @@ header span a {
 
 .natura div, .milieu div {
     border: 1px solid #00707c;
-    padding-bottom: 80%;
-    padding-left: 50%;
-    padding-top: 5%;
-    height: 200px;
+    padding: 5%;
 
+}
+
+.natura div:before, .milieu div:before, .natura div:after, .milieu div:after {
+  display: table;
+  content: " ";
+}
+
+.natura div:after, .milieu div:after {
+  clear: both;
 }
 
 /**
@@ -3122,11 +3149,11 @@ header span a {
 #main-footer {
 	padding-top: 220px;
 }
-#main-footer .menu-footer-container ul li a{
-	font-size: 14px;
+#footer-navigation{
+	background-color: #00707c;
 }
-#main-footer .menu-footer-container ul li:nth-last-child(2){
-	border-left: 75px solid #00707c;
+#main-footer #footer-navigation ul li a{
+	font-size: 14px;
 }
 
 .site-partenaires h2 {
