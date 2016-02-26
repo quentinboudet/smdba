@@ -27,9 +27,10 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/css/bootstraperso.css' type='text/css' media='screen' />
 	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/style.css' type='text/css' media='screen' />
 	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/css/slider-style.css' type='text/css' media='screen' />
-	<link rel='stylesheet' href='<?php echo get_template_directory_uri(); ?>/css/bootstraperso.css' type='text/css' media='screen' />
 	<?php wp_head(); ?>
 </head>
 
@@ -58,9 +59,19 @@
 			<aside class="col-sm-offset-4 col-sm-5">  
 				<span>Mairie, Le Village - 04270 Bras d’Asse</span><span>smdba@hotmail.fr</span>
 			</aside>
-			<nav id="primary-navigation" class="col-sm-offset-2 col-sm-10 no-padding text-center">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu no-padding full-width' ) ); ?>
-			</nav>
+			<div class="nav-container container-fluid col-sm-offset-2 col-sm-10 no-padding">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			    </div>
+			    <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu no-padding full-width', 'container' => '' ) ); ?>
+			    </div><!-- /.navbar-collapse -->
+		  	</div><!-- /.container-fluid -->
 		</header><!-- #masthead -->
 		<div>
 			<p><?php // Breadcrumb navigation

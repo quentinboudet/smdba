@@ -268,7 +268,7 @@ body {
 }
 
 #container.accueil #main-header{
-	height: 224px;
+	height: 210px;
 }
 
 #container.contact{
@@ -785,8 +785,6 @@ input[type="reset"] {
 	text-decoration: none;
 }
 
-button:hover,
-button:focus,
 input[type="submit"]:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -800,7 +798,6 @@ input[type="reset"]:focus {
 	outline: none;
 }
 
-button:active,
 input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
@@ -1043,6 +1040,7 @@ img.wp-smiley,
 }
 
 #main-header{
+	position: relative;
 	height: 430px;
 }
 
@@ -1101,6 +1099,9 @@ img.wp-smiley,
  * ----------------------------------------------------------------------------
  */
 
+.icon-bar{
+    background-color: #00707c;
+}
 .main-navigation {
 	clear: both;
 	margin: 0 auto;
@@ -1116,8 +1117,8 @@ div.nav-menu > ul {
 }
 
 	.nav-menu li {
-		display: inline-block;
 		position: relative;
+		list-style: none;
 	}
 
 		.nav-menu li a {
@@ -1161,7 +1162,6 @@ div.nav-menu > ul {
 
 			.nav-menu .sub-menu a,
 			.nav-menu .children a {
-				color: #fff;
 				margin: 0;
 				width: 100%;
 				font-size: 15px;
@@ -1170,8 +1170,10 @@ div.nav-menu > ul {
 
 ul.nav-menu li:hover > ul,
 .nav-menu ul li:hover > ul,
-ul.nav-menu .focus > ul,
-.nav-menu .focus > ul {
+ul.nav-menu li:focus > ul,
+.nav-menu li:focus > ul ,
+ul.nav-menu li:active > ul,
+.nav-menu li:active > ul {
 	clip: inherit;
 	overflow: inherit;
 	height: inherit;
@@ -1190,9 +1192,64 @@ ul.nav-menu .focus > ul,
 	display: none;
 }
 
+ @media (max-width: 767px){
+	.nav-container{
+		position: absolute;
+		top:0;
+		left: 0;
+	}
+
+	ul.nav-menu,
+	div.nav-menu > ul {
+		position: relative;
+		z-index: 9999;
+		margin: 0;
+		background-color: white;
+		border: 2px solid #00707c;
+	}
+		.nav-menu li {
+			display: list-item;
+		}
+			.nav-menu li a {
+				color: #00707c;
+				display: block;
+    			margin: 15px 0;
+				border: 0;
+				border-bottom: 1px solid #00707c;
+				padding: 8px 10% 14px;
+				text-align: left;
+				background-color: transparent;
+			}
+			.nav-menu li a:hover,
+			.nav-menu li a:focus {
+				background-color: #00707c;
+				color: white;
+			}
+			.nav-menu .menu-item-has-children > a{
+				margin-bottom: 0;
+	   			pointer-events: none;
+			}	
+			.nav-menu .sub-menu,
+			.nav-menu .children {
+				position: relative;
+			}
+				.nav-menu .sub-menu li, .nav-menu .children li {
+				    padding-left: 10%;
+				}
+					.nav-menu .sub-menu a, .nav-menu .children a {
+    					margin: 15px 0;
+						padding-left: 5%;
+					}
+				.nav-menu .current_page_item > a,
+				.nav-menu .current_page_ancestor > a,
+				.nav-menu .current-menu-item > a,
+				.nav-menu .current-menu-ancestor > a {
+					color: white;
+				}
+}
+
 /* Navbar */
 .navbar {
-	background-color: #f7f5e7;
 	margin: 0 auto;
 	max-width: 1600px;
 	width: 100%;
@@ -3358,10 +3415,6 @@ footer.entry-meta {
 		color: #fff;
 	}
 
-	ul.nav-menu,
-	div.nav-menu > ul {
-		display: none;
-	}
 
 /* RESPONSIVE FOOTER MENU */
 .nav-menu ul li:first-child .visible-sm{
