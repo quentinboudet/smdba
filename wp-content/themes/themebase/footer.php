@@ -23,7 +23,7 @@
 			</div>
 			<nav id="footer-navigation" class="col-sm-12 no-padding text-center">
 				<?php wp_nav_menu( array( 'theme_location' => 'menufooter', 'menu_class' => 'nav-menu no-padding full-width hidden-xs' ) ); ?>
-				<?php wp_nav_menu( array( 'theme_location' => 'menufooterresponsive', 'menu_class' => 'nav-menu no-padding full-width' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'menufooterresponsive', 'menu_class' => 'nav-menu no-padding full-width col-xs-12' ) ); ?>
 			</nav>
 		</footer>
 	</div><!-- #container -->
