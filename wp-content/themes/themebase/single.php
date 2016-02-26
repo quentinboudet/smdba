@@ -31,9 +31,6 @@ get_header(); ?>
 		  <?php the_content(); ?>
 		</div>
 		
-		<div class="post-comments">
-		  <?php comments_template(); ?>
-		</div>
 
 		<?php //get_template_part( 'content', get_post_format() ); ?>
 

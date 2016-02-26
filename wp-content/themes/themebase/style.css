@@ -1169,18 +1169,6 @@ div.nav-menu > ul {
 				font-family: "didact_gothic", sans-serif;
 			}
 
-ul.nav-menu li:hover > ul,
-.nav-menu ul li:hover > ul,
-ul.nav-menu li:focus > ul,
-.nav-menu li:focus > ul ,
-ul.nav-menu li:active > ul,
-.nav-menu li:active > ul {
-	clip: inherit;
-	overflow: inherit;
-	height: inherit;
-	width: inherit;
-}
-
 .nav-menu .current_page_item > a,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
@@ -1194,24 +1182,24 @@ ul.nav-menu li:active > ul,
 }
 
  @media (max-width: 767px){
-	.nav-container{
+	#main-header .nav-container{
 		position: absolute;
 		top:0;
 		left: 0;
 	}
 
-	ul.nav-menu,
-	div.nav-menu > ul {
+	#main-header ul.nav-menu,
+	#main-header div.nav-menu > ul {
 		position: relative;
 		z-index: 9999;
 		margin: 0;
 		background-color: white;
 		border: 2px solid #00707c;
 	}
-		.nav-menu li {
+		#main-header .nav-menu li {
 			display: list-item;
 		}
-			.nav-menu li a {
+			#main-header .nav-menu li a {
 				color: #00707c;
 				display: block;
     			margin: 15px 0;
@@ -1221,32 +1209,50 @@ ul.nav-menu li:active > ul,
 				text-align: left;
 				background-color: transparent;
 			}
-			.nav-menu li a:hover,
-			.nav-menu li a:focus {
+			#main-header .nav-menu li a:hover,
+			#main-header .nav-menu li a:focus {
 				background-color: #00707c;
 				color: white;
 			}
-			.nav-menu .menu-item-has-children > a{
+			#main-header .nav-menu .menu-item-has-children > a{
 				margin-bottom: 0;
 	   			pointer-events: none;
 			}	
-			.nav-menu .sub-menu,
-			.nav-menu .children {
+			#main-header .nav-menu .current-menu-item > a
+			#main-header .nav-menu .current_page_item > a,
+			#main-header .nav-menu .current_page_ancestor > a,
+			#main-header .nav-menu .current-menu-ancestor > a {
+				color: white;
+				background-color: #00707c;
+			}	
+			#main-header .nav-menu .sub-menu,
+			#main-header .nav-menu .children {
 				position: relative;
 			}
-				.nav-menu .sub-menu li, .nav-menu .children li {
+				#main-header .nav-menu .sub-menu li, #main-header .nav-menu .children li {
 				    padding-left: 10%;
 				}
-					.nav-menu .sub-menu a, .nav-menu .children a {
+					#main-header .nav-menu .sub-menu a, #main-header .nav-menu .children a {
     					margin: 15px 0;
 						padding-left: 5%;
 					}
-				.nav-menu .current_page_item > a,
-				.nav-menu .current_page_ancestor > a,
-				.nav-menu .current-menu-item > a,
-				.nav-menu .current-menu-ancestor > a {
-					color: white;
+				#main-header .nav-menu .sub-menu li.current-menu-item, 
+				#main-header .nav-menu .sub-menu li.current_page_item,
+				#main-header .nav-menu .sub-menu li.current_page_ancestor,
+				#main-header .nav-menu .sub-menu li.current-menu-ancestor 
+				#main-header .nav-menu .children li.current-menu-item, 
+				#main-header .nav-menu .children li.current_page_item,
+				#main-header .nav-menu .children li.current_page_ancestor,
+				#main-header .nav-menu .children li.current-menu-ancestor {
+				    background-color: #00707c;
 				}
+					#main-header .nav-menu .sub-menu li.current-menu-item > a, 
+					#main-header .nav-menu .sub-menu li.current_page_item > a,
+					#main-header .nav-menu .sub-menu li.current_page_ancestor > a,
+					#main-header .nav-menu .sub-menu li.current-menu-ancestor > a{
+						background-color: transparent;
+						color: white;
+					} 
 }
 
 /* Navbar */

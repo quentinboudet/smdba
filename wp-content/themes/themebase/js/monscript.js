@@ -43,7 +43,7 @@ $(document).ready(function(){
 
 	});
 
-	$('#slider_droite').click(function(){
+	$('#slider_droite').mousedown(function(){
 		bta.removeClass("active");
 		if (imv.next().length) {
 			imv = imv.next().animate({left:"0%"}, temps);
@@ -56,7 +56,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$('#slider_gauche').click(function(){
+	$('#slider_gauche').mousedown(function(){
 		bta.removeClass("active");
 		if (imv.prev().length) {
 			imv = imv.stop(true).animate({left:"100%"}, temps).prev();
